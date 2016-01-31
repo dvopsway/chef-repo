@@ -1,0 +1,11 @@
+{
+  "name":"webserver",
+  "default_attributes" : {
+      "apache" : {
+        "greeting" : "Paddy"
+    }
+  },
+  "run_list" : [
+    "recipe[apache]"
+  ]
+}

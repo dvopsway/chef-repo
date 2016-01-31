@@ -1,5 +1,6 @@
 <html>
 <body>
-  <h1>Hello World!</h1>
+  <h1>Hello <%= node['apache']['greeting'] %> </h1>
+  <p>My name is <%= node['hostname'] %></p>
 </body>
 </html>
