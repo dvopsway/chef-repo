@@ -1,0 +1,8 @@
+{
+  "name" : "chef-client",
+  "description" : "manages the chef-client",
+  "run_list" : [
+    "recipe[chef-client]",
+    "recipe[chef-client::delete_validation]"
+  ]
+}
