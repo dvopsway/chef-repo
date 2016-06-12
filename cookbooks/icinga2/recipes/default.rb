@@ -10,12 +10,12 @@
 log "Well, let begin with icinga2"
 
 execute 'install repo' do
-  command 'yum install -y https://packages.icinga.org/epel/6/release/noarch/icinga-rpm-release-6-1.el6.noarch.rpm'
+  command 'rpm --import http://packages.icinga.org/icinga.key && yum install -y https://packages.icinga.org/epel/6/release/noarch/icinga-rpm-release-6-1.el6.noarch.rpm'
   creates '/etc/yum.repos.d/ICINGA-release.repo'
   action :run
 end
 
-package 'icinga2' do
+package ['icinga2','httpd','mysql-server','mysql','icinga2-ido-mysql'] do
   action :install
 end
 

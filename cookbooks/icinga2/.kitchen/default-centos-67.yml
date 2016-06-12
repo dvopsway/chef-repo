@@ -3,4 +3,4 @@ hostname: 127.0.0.1
 port: '2222'
 username: vagrant
 ssh_key: "/Users/padmakar/Documents/DevOps/chef-repo/cookbooks/icinga2/.kitchen/kitchen-vagrant/kitchen-icinga2-default-centos-67/.vagrant/machines/default/virtualbox/private_key"
-last_action: create
+last_action: converge
